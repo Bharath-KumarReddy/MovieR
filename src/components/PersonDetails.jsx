@@ -24,6 +24,7 @@ const PersonDetails = () => {
     }, [id]);
 
     return info ? (
+        <div className="bg-[#1F1E24]">
         <div className="px-[10%] w-screen h-auto bg-[#1F1E24] ">
             {/* Part 1 navigation */}
             <nav className="h-[10vh] w-full text-zinc-100 flex items-center gap-10 text-xl bg-[#1F1E24]">
@@ -117,6 +118,7 @@ const PersonDetails = () => {
                     <h1 className=" text-zinc-400 ">
                         {info.detail.also_known_as.join(", ")}
                     </h1> */}
+
                 </div>
 
                 {/* Part 3 right Details and information  */}
@@ -177,6 +179,7 @@ const PersonDetails = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     ) : (
         <Loading />

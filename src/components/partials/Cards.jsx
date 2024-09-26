@@ -4,7 +4,7 @@ import noimage from '../../components/noimage.jpeg';
 
 const Cards = ({ data, title }) => {
     return (
-        <div className="flex flex-wrap w-full h-full px-[5%] bg-[#1F1E24]">
+        <div className="flex flex-wrap w-full h-full px-[5%] bg-[#1F1E24] ">
             <Link
                 onClick={() => {
                     window.scrollTo({
@@ -41,7 +41,6 @@ const Cards = ({ data, title }) => {
                             c.original_name ||
                             c.original_title}
                     </h1>
-
                     {c.vote_average && (
                         <div className="absolute right-[-10%] bottom-[25%] rounded-full text-xl font-semibold bg-yellow-600 text-white w-[5vh] h-[5vh] flex justify-center items-center">
                             {(c.vote_average * 10).toFixed()} <sup>%</sup>

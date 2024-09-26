@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Horizontal = ({ data}) => {
   console.log(data);
   return (
-    <div className="w-full  p-5">
+    <div className=" cursor-pointer w-full  p-5">
       
 
       <div className="w-[100%] flex overflow-y-hidden ">
